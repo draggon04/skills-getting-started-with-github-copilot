@@ -1,3 +1,66 @@
+/* Participant list styles */
+.participants {
+  margin-top: 12px;
+}
+
+.participants h5 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #0f1940;
+  font-weight: 600;
+}
+
+/* Hide default bullets and present as chips */
+.participant-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+}
+
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+  border: 1px solid #e6eefb;
+  color: #073763;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  box-shadow: 0 1px 0 rgba(10, 25, 47, 0.04);
+}
+
+.participant-email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+/* Delete button (small X) */
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #e11d48;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.participant-delete:hover {
+  background: rgba(225, 29, 72, 0.08);
+}
+
+.no-participants {
+  font-style: italic;
+  color: #6b7280;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
