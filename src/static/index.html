@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mergington High School Activities</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Activity card styling */
+      .activity-card {
+        background: linear-gradient(180deg, #ffffff, #f7fafc);
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+      }
+      .activity-card h4 {
+        margin: 0 0 8px 0;
+        color: #0f172a;
+      }
+      .activity-card p {
+        margin: 6px 0;
+        color: #334155;
+      }
+
+      /* Participants section */
+      .participants {
+        margin-top: 12px;
+        padding-top: 8px;
+        border-top: 1px dashed #e2e8f0;
+      }
+      .participants h5 {
+        margin: 0 0 8px 0;
+        font-size: 0.95rem;
+        color: #0f172a;
+      }
+      .participant-list {
+        margin: 0;
+        padding-left: 18px;
+        color: #334155;
+      }
+      .participant-list li {
+        margin: 4px 0;
+      }
+      .no-participants {
+        font-style: italic;
+        color: #64748b;
+        margin: 4px 0 0 0;
+      }
+
+      /* Small responsive tweaks */
+      @media (min-width: 700px) {
+        #activities-container, #signup-container {
+          display: inline-block;
+          vertical-align: top;
+          width: 48%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
